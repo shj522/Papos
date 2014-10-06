@@ -1,0 +1,62 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TableRow android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_group"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size"
+            android:typeface="normal" />
+
+        <Spinner
+            android:id="@+id/dialog_group_select_firstspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:popupBackground="@color/spinner_bgcolor" />
+    </TableRow>
+
+    <TableRow android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/second_group"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size"
+            android:typeface="normal" />
+
+        <Spinner
+            android:id="@+id/dialog_group_select_secondspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:popupBackground="@color/spinner_bgcolor" />
+    </TableRow>
+
+    <TableRow android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/third_group"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size"
+            android:typeface="normal" />
+
+        <Spinner
+            android:id="@+id/dialog_group_select_thirdspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:popupBackground="@color/spinner_bgcolor" />
+    </TableRow>
+
+</TableLayout>

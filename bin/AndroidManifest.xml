@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.papos"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/ImageGridActionBarTheme"> <!--  android:theme="@style/AppTheme" >  -->
+        
+        <!--  ImageGridActivity -->
+        
+        <activity
+            android:name=".ImageGridActivity"
+            android:label="@string/app_name"
+        	android:theme="@style/ImageGridActionBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!--  ImagePagerActivity -->
+        
+        <activity
+            android:name=".ImagePagerActivity"
+            android:icon="@drawable/ic_picture_blue"
+            android:theme="@style/ImagePagerActionBarTheme"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        
+    </application>
+
+</manifest>

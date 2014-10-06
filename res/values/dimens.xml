@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+  	<dimen name="text_size">18sp</dimen>
+
+  	<color name="spinner_bgcolor">#FAFAFA</color>
+	<!--  <color name="blue">#1FB7EB</color>  -->
+	<color name="blue">#84D2F0</color>
+	<color name="yellow">#FDCC2D</color>
+	<color name="white">#FFFFFF</color>
+	
+</resources>

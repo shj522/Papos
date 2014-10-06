@@ -1,0 +1,61 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    
+    <!-- ImageGridActivity Actionbar style -->
+    	<!--	manifest에서 Theme로 사용 할 스타일을 만듭니다.
+			ActionBar 스타일 적용하기위해 android:actionBarStyle 아이템을 추가합니다.	-->
+
+    <style name="ImageGridActionBarTheme" parent="android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/ImageGridActionBar</item>
+    </style>
+
+    <!--	ActionBar 스타일에 사용 할 style을 추가합니다.
+    		ActionBar의 타이틀에 스타일을 적용하기위해 android:titleTextStyle 아이템을 추가합니다.	-->    
+    
+    <style name="ImageGridActionBar" parent="android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@color/white</item>
+        <item name="android:titleTextStyle">@style/ImageGridActionBarTitleText</item>
+    </style>
+
+	<!--	ActionBar의 타이틀에 적용 할 스타일 아이템을 추가합니다.	-->    
+    <style name="ImageGridActionBarTitleText" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+		<item name="android:textColor">@color/blue</item>
+    </style>
+    
+    
+    
+    <!-- ImagePagerActivity Overlay actionbar style -->
+    <style name="ImagePagerActionBarTheme" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/ImagePagerActionBar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    
+    <style name="ImagePagerActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:titleTextStyle">@style/ImagePagerActionBarTitleText</item>
+        <item name="android:background">#FFFFFFFF</item>
+    	<item name="android:backgroundSplit">#FFFFFFFF</item>
+    </style>
+
+	<!--	ActionBar의 타이틀에 적용 할 스타일 아이템을 추가합니다.	-->    
+    <style name="ImagePagerActionBarTitleText" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+		<item name="android:textColor">@color/blue</item>
+    </style>
+</resources>

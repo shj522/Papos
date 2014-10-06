@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="346dp"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/dialog_search_select_dateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="2014/09/12 Tuesday" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time_slot"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size"/>
+
+            <Spinner
+                android:id="@+id/dialog_search_select_timeslotSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:entries="@array/timeslot_array"
+                android:popupBackground="@color/spinner_bgcolor"
+                android:visibility="visible" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/season"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size" />
+
+            <Spinner
+                android:id="@+id/dialog_search_select_seasonSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:entries="@array/season_array"
+                android:popupBackground="@color/spinner_bgcolor"
+                android:prompt="@string/season" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recent"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size"
+                android:typeface="normal" />
+
+            <Spinner
+                android:id="@+id/dialog_search_select_recentSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:entries="@array/recent_array"
+                android:popupBackground="@color/spinner_bgcolor"
+                android:prompt="@string/recent" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/form"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size"
+                android:typeface="normal" />
+
+            <Spinner
+                android:id="@+id/dialog_search_select_formSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:entries="@array/form_array"
+                android:popupBackground="@color/spinner_bgcolor"
+                android:prompt="@string/form" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/people"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size"
+                android:typeface="normal" />
+
+            <Spinner
+                android:id="@+id/dialog_search_select_peopleSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:popupBackground="@color/spinner_bgcolor"
+                android:prompt="@string/people" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/group"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size"
+                android:typeface="normal" />
+
+            <Spinner
+                android:id="@+id/dialog_search_select_groupSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:popupBackground="@color/spinner_bgcolor"
+                android:prompt="@string/group" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/distance"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size"
+                android:typeface="normal" />
+
+            <Spinner
+                android:id="@+id/dialog_search_select_distanceSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:entries="@array/distance_array"
+                android:popupBackground="@color/spinner_bgcolor"
+                android:prompt="@string/distance" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size"
+                android:typeface="normal" />
+
+            <Spinner
+                android:id="@+id/dialog_search_select_locationSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:popupBackground="@color/spinner_bgcolor"
+                android:prompt="@string/location" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/place"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size"
+                android:typeface="normal" />
+
+            <Spinner
+                android:id="@+id/dialog_search_select_placeSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:popupBackground="@color/spinner_bgcolor"
+                android:prompt="@string/place" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/event"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size"
+                android:typeface="normal" />
+
+            <Spinner
+                android:id="@+id/dialog_search_select_eventSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:popupBackground="@color/spinner_bgcolor"
+                android:prompt="@string/event" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>
