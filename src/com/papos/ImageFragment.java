@@ -1,9 +1,11 @@
 package com.papos;
 
 import android.annotation.*;
+import android.app.*;
 import android.graphics.*;
 import android.os.*;
 import android.support.v4.app.*;
+import android.support.v4.app.Fragment;
 import android.view.*;
 import android.widget.*;
 
@@ -38,6 +40,7 @@ public class ImageFragment extends Fragment {
 		
 	}
 
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -61,6 +64,21 @@ public class ImageFragment extends Fragment {
 		}
 
 		mImageView = (ImageView)v.findViewById(R.id.image_imageView);
+		
+		mImageView.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				ActionBar actionbar = getActivity().getActionBar();
+				if (actionbar.isShowing())
+					actionbar.hide();
+				else
+					actionbar.show();
+				
+			}
+		});
+
+		
 		
 		try {
 			Bitmap bm = BitmapFactory.decodeFile(mImage.getPath());

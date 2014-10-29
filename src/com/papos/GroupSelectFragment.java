@@ -30,6 +30,10 @@ public class GroupSelectFragment extends DialogFragment {
 	private ArrayList<String> mThirdList;
 
 
+	public static GroupSelectFragment newInstance() {
+		return newInstance("", "", "");
+	}
+	
 	public static GroupSelectFragment newInstance(String first, String second, String third) {
 		Bundle args = new Bundle();
 		args.putSerializable(EXTRA_GROUP_FIRST, first);

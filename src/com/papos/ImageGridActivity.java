@@ -6,7 +6,6 @@ import android.view.*;
 
 public class ImageGridActivity extends FragmentActivity {
 
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

@@ -1,0 +1,93 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+	<TableLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:padding="10dp" >
+
+		<TableRow>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/person"
+				android:textColor="@color/blue"
+				android:textSize="@dimen/text_size"
+				android:typeface="normal"/>
+
+           <Spinner
+               android:id="@+id/dialog_set_attribute_personSpinner"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_weight="1"
+               android:popupBackground="@color/spinner_bgcolor"/>
+
+           <ImageButton
+               android:id="@+id/dialog_set_attribute_addpersonButton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="#00FFFFFF"
+               android:src="@drawable/ic_add_yellow" />
+
+		</TableRow>
+		
+    	<TableRow>
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/place"
+			    android:textColor="@color/blue"
+			    android:textSize="@dimen/text_size"
+			    android:typeface="normal"/>
+			
+			<Spinner
+			    android:id="@+id/dialog_set_attribute_placeSpinner"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="10dp"
+			    android:layout_weight="1" 
+			    android:popupBackground="@color/spinner_bgcolor"/>
+			
+			<ImageButton
+               android:id="@+id/dialog_set_attribute_addplaceButton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="#00FFFFFF"
+               android:src="@drawable/ic_add_yellow" />
+		
+		</TableRow>
+		
+    	<TableRow>
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/event"
+			    android:textColor="@color/blue"
+			    android:textSize="@dimen/text_size"
+			    android:typeface="normal"/>
+			
+			<Spinner
+			    android:id="@+id/dialog_set_attribute_eventSpinner"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="10dp"
+			    android:layout_weight="1" 
+			    android:popupBackground="@color/spinner_bgcolor"/>
+			
+			<ImageButton
+               android:id="@+id/dialog_set_attribute_addeventButton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="#00FFFFFF"
+               android:src="@drawable/ic_add_yellow" />
+			
+		</TableRow>
+			
+     
+        </TableLayout>
+</ScrollView>
+

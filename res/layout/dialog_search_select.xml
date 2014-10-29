@@ -10,9 +10,8 @@
         android:padding="10dp" >
 
         <TableRow>
-
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/date"
                 android:textColor="@color/blue"
@@ -20,10 +19,11 @@
 
             <Button
                 android:id="@+id/dialog_search_select_dateButton"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="2014/09/12 Tuesday" />
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size" />
 
         </TableRow>
 
@@ -114,7 +114,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/people"
+                android:text="@string/person"
                 android:textColor="@color/blue"
                 android:textSize="@dimen/text_size"
                 android:typeface="normal" />
@@ -126,9 +126,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
                 android:popupBackground="@color/spinner_bgcolor"
-                android:prompt="@string/people" />
+                android:prompt="@string/person" />
         </TableRow>
 
+        <!-- 
         <TableRow>
 
             <TextView
@@ -170,12 +171,14 @@
                 android:prompt="@string/distance" />
         </TableRow>
 
+ -->
+ 
         <TableRow>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/location"
+                android:text="@string/address"
                 android:textColor="@color/blue"
                 android:textSize="@dimen/text_size"
                 android:typeface="normal" />
@@ -187,7 +190,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
                 android:popupBackground="@color/spinner_bgcolor"
-                android:prompt="@string/location" />
+                android:prompt="@string/address" />
         </TableRow>
 
         <TableRow>

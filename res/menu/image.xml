@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.MyGallery.activity_image_grid_full">
+
+    
+    <!-- set Attribute -->
+    <item 
+        android:id="@+id/menu_image_set_attribute"
+        android:icon="@drawable/ic_set_attribute_blue"
+        android:showAsAction="always"
+        android:orderInCategory="1"
+        android:title="Set Attribute"/>
+       
+    <item 
+        android:id="@+id/menu_image_search"
+        android:icon="@drawable/ic_search_blue"
+        android:showAsAction="always"
+        android:orderInCategory="2"
+        android:title="Search by image"/>
+    
+
+    <item 
+        android:id="@+id/menu_image_share"
+        android:icon="@drawable/ic_share_blue"
+        android:showAsAction="always"
+        android:orderInCategory="3"
+        android:title="Share image"/>
+   
+   <item 
+        android:id="@+id/menu_image_delete"
+        android:icon="@drawable/ic_delete_blue"
+        android:showAsAction="always"
+        android:orderInCategory="4"
+        android:title="Delete image"/>
+   
+    
+</menu>    
+

@@ -4,10 +4,16 @@ import android.database.*;
 import android.os.*;
 import android.support.v4.app.*;
 import android.support.v4.view.*;
+import android.view.*;
+
 
 public class ImagePagerActivity extends FragmentActivity {
 	private ViewPager mViewPager;
 	private Cursor mImageCursor;
+	
+	private static final String EXTRA_SET_ATTRIBUTE = "com.papos.set_attribute";
+	private static final String DIALOG_SET_ATTRIBUTE = "set_attribute";
+	private static final int REQUEST_SET_ATTRIBUTE = 0;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -70,6 +76,53 @@ public class ImagePagerActivity extends FragmentActivity {
 				break;
 			}
 		}
+		
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.image, menu);
+		return super.onCreateOptionsMenu(menu);
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    // Handle presses on the action bar items
+	    switch (item.getItemId()) {
+	    case R.id.menu_image_set_attribute:
+	    	popupSetAttributeDialog();
+	    	return true;
+	    case R.id.menu_image_search:
+            searchByImage();
+            return true;
+        case R.id.menu_image_share:
+	    	shareImage();
+        	return true;	    
+	    case R.id.menu_image_delete:
+	    	deleteImage();
+	    	return true;
+	    default:
+	        return super.onOptionsItemSelected(item);
+	    }
+	}
+	
+	private void popupSetAttributeDialog() {
+		FragmentManager fm = getSupportFragmentManager();
+		SetAttributeFragment dialog = SetAttributeFragment.newInstance();
+		//dialog.setTargetFragment(this, REQUEST_SET_ATTRIBUTE);
+		dialog.show(fm, DIALOG_SET_ATTRIBUTE);	
+	}
+	
+	private void shareImage(){
+		
+	}
+	
+	private void searchByImage(){
+		
+	}
+	
+	private void deleteImage(){
 		
 	}
 	

@@ -15,7 +15,7 @@ public class ImageDB {
 		mContext = context;
 		
 		ContentResolver cr = context.getContentResolver();
-		mImages =  cr.query(Images.Thumbnails.EXTERNAL_CONTENT_URI, null, null, null, null);
+		mImages =  cr.query(Images.Media.EXTERNAL_CONTENT_URI, null, null, null, null);
 		
 	}
 	
